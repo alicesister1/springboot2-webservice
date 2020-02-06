@@ -1,4 +1,4 @@
-package com.directori.book.springboot.service.post;
+package com.directori.book.springboot.service.posts;
 
 import com.directori.book.springboot.domain.posts.PostsRepository;
 import com.directori.book.springboot.web.dto.PostsSaveRequestDto;

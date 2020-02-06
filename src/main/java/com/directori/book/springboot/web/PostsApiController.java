@@ -1,6 +1,6 @@
 package com.directori.book.springboot.web;
 
-import com.directori.book.springboot.service.post.PostsService;
+import com.directori.book.springboot.service.posts.PostsService;
 import com.directori.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
