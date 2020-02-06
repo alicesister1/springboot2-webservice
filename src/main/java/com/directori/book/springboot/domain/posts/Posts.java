@@ -10,22 +10,23 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 public class Posts {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Long id;
 
-	@Column(length = 500, nullable = false)
-	private String title;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-	@Column(columnDefinition = "TEXT", nullable = false)
-	private String content;
+  @Column(length = 500, nullable = false)
+  private String title;
 
-	private String author;
+  @Column(columnDefinition = "TEXT", nullable = false)
+  private String content;
 
-	@Builder
-	public Posts(String title, String content, String author) {
-		this.title = title;
-		this.content = content;
-		this.author = author;
-	}
+  private String author;
+
+  @Builder
+  public Posts(String title, String content, String author) {
+    this.title = title;
+    this.content = content;
+    this.author = author;
+  }
 }
