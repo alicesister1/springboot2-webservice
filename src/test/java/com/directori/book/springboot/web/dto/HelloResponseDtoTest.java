@@ -1,4 +1,4 @@
-package com.directori.book.springboot.dto;
+package com.directori.book.springboot.web.dto;
 
 import com.directori.book.springboot.web.dto.HelloResponseDto;
 import org.junit.Test;

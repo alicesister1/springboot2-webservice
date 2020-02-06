@@ -1,4 +1,4 @@
-package com.directori.book.springboot;
+package com.directori.book.springboot.web;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
