@@ -13,4 +13,9 @@ public class IndexController {
     // 기본 경로는 src/main/resources/templates
     return "index"; // same as src/main/resources/templates/index.mustache
   }
+
+  @GetMapping("/posts/save")
+  public String postsSave() {
+    return "posts-save";
+  }
 }
