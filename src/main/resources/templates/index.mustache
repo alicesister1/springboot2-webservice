@@ -5,6 +5,18 @@
   <div class="row">
     <div class="col-md-6">
       <a href="/posts/save" role="button" class="btn btn-primary">글 등록</a>
+      <!--해당 값이 존재하는 경우-->
+      {{#userName}}
+        Logged in as: <span id="user">{{userName}}</span>
+        <!-- 스프링 시큐리티에서 기본적으로 제공하는 logout URL 임, 별도의 Controller 만들 필요 없음.-->
+        <a href="/logout" class="btn btn-info active" role="button">Logout</a>
+      {{/userName}}
+
+      <!--해당 값이 존재하지 않는 경우-->
+      {{^userName}}
+        <a href="/oauth2/authorization/google"
+           class="btn btn-success active" role="button">Google Login</a>
+      {{/userName}}
     </div>
   </div>
   <br>
