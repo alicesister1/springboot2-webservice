@@ -1,7 +1,6 @@
 package com.directori.book.springboot.web;
 
-import com.directori.book.springboot.config.oauth.dto.SessionUser;
-import com.directori.book.springboot.domain.user.User;
+import com.directori.book.springboot.config.auth.dto.SessionUser;
 import com.directori.book.springboot.service.posts.PostsService;
 import com.directori.book.springboot.web.dto.PostsResponseDto;
 import javax.servlet.http.HttpSession;

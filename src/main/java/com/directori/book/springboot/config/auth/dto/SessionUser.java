@@ -1,4 +1,4 @@
-package com.directori.book.springboot.config.oauth.dto;
+package com.directori.book.springboot.config.auth.dto;
 
 import com.directori.book.springboot.domain.user.User;
 import java.io.Serializable;

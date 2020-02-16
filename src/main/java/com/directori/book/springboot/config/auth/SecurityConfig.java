@@ -1,4 +1,4 @@
-package com.directori.book.springboot.config.oauth;
+package com.directori.book.springboot.config.auth;
 
 import com.directori.book.springboot.domain.user.Role;
 import lombok.RequiredArgsConstructor;

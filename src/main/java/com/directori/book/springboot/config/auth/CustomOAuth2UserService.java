@@ -1,7 +1,7 @@
-package com.directori.book.springboot.config.oauth;
+package com.directori.book.springboot.config.auth;
 
-import com.directori.book.springboot.config.oauth.dto.OAuthAttributes;
-import com.directori.book.springboot.config.oauth.dto.SessionUser;
+import com.directori.book.springboot.config.auth.dto.OAuthAttributes;
+import com.directori.book.springboot.config.auth.dto.SessionUser;
 import com.directori.book.springboot.domain.user.User;
 import com.directori.book.springboot.domain.user.UserRepository;
 import java.util.Collections;
