@@ -1,8 +1,10 @@
 package com.directori.book.springboot.web;
 
+import com.directori.book.springboot.config.auth.LoginUser;
 import com.directori.book.springboot.config.auth.dto.SessionUser;
 import com.directori.book.springboot.service.posts.PostsService;
 import com.directori.book.springboot.web.dto.PostsResponseDto;
+import javax.mail.Session;
 import javax.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -25,10 +27,9 @@ public class IndexController {
 //    return "index"; // same as src/main/resources/templates/index.mustache
 //  }
   @GetMapping("/")
-  public String index(Model model) {
+  public String index(Model model, @LoginUser SessionUser user) {
     model.addAttribute("posts", postsService.findAllDesc());
 
-    SessionUser user = (SessionUser) httpSession.getAttribute("user");
     if (user != null) {
       model.addAttribute("userName", user.getName());
     }
