@@ -4,7 +4,6 @@ import com.directori.book.springboot.config.auth.LoginUser;
 import com.directori.book.springboot.config.auth.dto.SessionUser;
 import com.directori.book.springboot.service.posts.PostsService;
 import com.directori.book.springboot.web.dto.PostsResponseDto;
-import javax.mail.Session;
 import javax.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -22,9 +21,9 @@ public class IndexController {
 //  @GetMapping("/")
 //  public String index() {
 //
-//    // mustache start는 컨트롤러에서 문자열을 반환할 때 앞의 경로와 뒤의 파일 확장자는 자동으로 지정됨
+//    // mustache starter는 컨트롤러에서 문자열을 반환할 때 앞의 경로와 뒤의 파일 확장자는 자동으로 지정됨
 //    // 기본 경로는 src/main/resources/templates
-//    return "index"; // same as src/main/resources/templates/index.mustache
+//    return "index"; // same as "src/main/resources/templates/index.mustache"
 //  }
   @GetMapping("/")
   public String index(Model model, @LoginUser SessionUser user) {
