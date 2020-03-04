@@ -4,10 +4,9 @@
   "description": "springboot webservice example",
   "main": "index.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "webpack --mode development",
-    "build": "webpack --mode production",
-    "devserver": "webpack-dev-server --open --progress"
+    "prod": "webpack --env=production",
+    "dev": "webpack-dev-server --env=development --open --progress",
+    "start": "npm run dev"
   },
   "repository": {
     "type": "git",
