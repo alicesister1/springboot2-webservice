@@ -1,0 +1,20 @@
+language: java
+jdk:
+  - openjdk8
+
+branches:
+  only:
+    - master
+
+# gradle 의존성을 Travis CI 서버의 Home에 캐시하여, 같은 의존성은 다음 배포때부터 다시 받지 않게 설정
+cache:
+  directories:
+    - '$HOME/.m2/repository'
+    - '$HOME/.gradle'
+
+script: "./gradlew clean build"
+
+notifications:
+  email:
+    recipients:
+      - alicesister1@gmail.com
