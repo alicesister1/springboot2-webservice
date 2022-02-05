@@ -6,3 +6,5 @@
 /out/
 
 application-oauth.properties
+
+node_modules
