@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # stop.sh 파일이 속한 경로
+ABSPATH=$(readlink -f $0)
 ABSDIR=$(dirname $ABSPATH)
 source ${ABSDIR}/profile.sh
 
