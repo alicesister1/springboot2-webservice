@@ -49,3 +49,4 @@ notifications:
   email:
     recipients:
       - alicesister1@gmail.com
+    on_success: never
